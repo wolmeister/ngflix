@@ -14,15 +14,15 @@ export class LoginPageComponent implements OnInit {
   email = '';
   password = '';
 
-  getState: Observable<AuthState>;
+  state: Observable<AuthState>;
   error = '';
 
   constructor(private store: Store<AppState>) {
-    this.getState = this.store.select(state => state.auth);
+    this.state = this.store.select(state => state.auth);
   }
 
   ngOnInit() {
-    this.getState.subscribe((state: AuthState) => {
+    this.state.subscribe((state: AuthState) => {
       this.error = state.error;
     });
   }
