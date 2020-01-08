@@ -42,6 +42,7 @@ export class AuthEffects {
     this.actions.pipe(
       ofType(AuthActionTypes.SIGN_OUT),
       tap(() => {
+        this.router.navigateByUrl('/login');
         localStorage.removeItem('@@ngflix/auth/user');
       })
     )
