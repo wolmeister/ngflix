@@ -1,0 +1,22 @@
+<div class="account-page">
+  <app-header></app-header>
+  <div class="container">
+    <h1 class="caption">Account</h1>
+    <div class="section-group">
+      <div class="section-group-label">Name</div>
+      <div class="section-group-value">{{user && user.name}}</div>
+    </div>
+    <div class="section-group">
+      <div class="section-group-label">Email</div>
+      <div class="section-group-value">{{user && user.email}}</div>
+    </div>
+    <div class="section-group">
+      <div class="section-group-label">Phone</div>
+      <div class="section-group-value">{{user && user.phone}}</div>
+    </div>
+    <div class="section-group">
+      <div class="section-group-label">Plan Details</div>
+      <div class="section-group-value">{{user && user.plan}}</div>
+    </div>
+  </div>
+</div>
