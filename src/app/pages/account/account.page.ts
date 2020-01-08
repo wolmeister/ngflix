@@ -9,7 +9,7 @@ import { User } from '../../models/user';
   templateUrl: './account.page.html',
   styleUrls: ['./account.page.scss'],
 })
-export class AccountPage implements OnInit {
+export class AccountPageComponent implements OnInit {
   user: User;
 
   constructor(private store: Store<AppState>) {}
