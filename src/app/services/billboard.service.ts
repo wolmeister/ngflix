@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-import { BillboardMedia } from '../models/billboardMedia';
+import { BillboardMedia } from '../models/billboard-media';
 import billboard from './__data__/billboards';
 
 @Injectable({

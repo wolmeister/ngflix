@@ -1,4 +1,4 @@
-import { BillboardMedia } from '../../models/billboardMedia';
+import { BillboardMedia } from '../../models/billboard-media';
 
 const billboard: BillboardMedia = {
   id: 1,
