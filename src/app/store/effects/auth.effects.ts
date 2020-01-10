@@ -38,13 +38,15 @@ export class AuthEffects {
     )
   );
 
-  signOut = createEffect(() =>
-    this.actions.pipe(
-      ofType(AuthActionTypes.SIGN_OUT),
-      tap(() => {
-        this.router.navigateByUrl('/login');
-        localStorage.removeItem('@@ngflix/auth/user');
-      })
-    )
+  signOut = createEffect(
+    () =>
+      this.actions.pipe(
+        ofType(AuthActionTypes.SIGN_OUT),
+        tap(() => {
+          localStorage.removeItem('@@ngflix/auth/user');
+          this.router.navigateByUrl('/login');
+        })
+      ),
+    { dispatch: false }
   );
 }
