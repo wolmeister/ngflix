@@ -1,10 +1,24 @@
 import { NgModule } from '@angular/core';
 
 import { FeatherModule } from 'angular-feather';
-import { Play } from 'angular-feather/icons';
+import {
+  Play,
+  ArrowLeft,
+  ChevronLeft,
+  ChevronRight,
+  ChevronDown,
+  PlayCircle,
+  X,
+} from 'angular-feather/icons';
 
 const icons = {
   Play,
+  ArrowLeft,
+  ChevronLeft,
+  ChevronRight,
+  ChevronDown,
+  PlayCircle,
+  X,
 };
 
 @NgModule({
