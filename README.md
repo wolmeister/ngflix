@@ -55,7 +55,7 @@ Production version:
 docker-compose -f docker-compose-prod.yml up
 ```
 
-The development version runs on por 4200, and the production on port 80.
+The development version runs on port 4200, and the production on port 80.
 
 ## Accounts
 
