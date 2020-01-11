@@ -34,7 +34,7 @@ export class HomePageComponent {
       });
   }
 
-  @HostListener('window:scroll', ['$event'])
+  @HostListener('window:scroll')
   onScroll() {
     this.transparent = window.scrollY < 70;
   }
