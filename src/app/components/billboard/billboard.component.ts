@@ -1,5 +1,6 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { BillboardMedia } from 'src/app/models/billboard-media';
+
+import { BillboardMedia } from '../../models/billboard-media';
 
 @Component({
   selector: 'app-billboard',
