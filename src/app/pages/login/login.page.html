@@ -3,7 +3,6 @@
     <img class="login-header-logo" src="assets/logo.svg" />
   </div>
   <div class="login-body">
-    <h1>Sign In</h1>
     <form (ngSubmit)="onSubmit()" class="login-form">
       <span *ngIf="!!error" class="login-error">{{error}}</span>
       <app-input [(text)]="email" placeholder="Email"></app-input>
