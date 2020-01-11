@@ -1,6 +1,9 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { SliderComponent } from './slider.component';
+import { SlideContentComponent } from '../slide-content/slide-content.component';
+import { RatingComponent } from '../rating/rating.component';
+import { IconsModule } from '../../icons.module';
 
 describe('SliderComponent', () => {
   let component: SliderComponent;
@@ -8,9 +11,9 @@ describe('SliderComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SliderComponent ]
-    })
-    .compileComponents();
+      imports: [IconsModule],
+      declarations: [SliderComponent, SlideContentComponent, RatingComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {
