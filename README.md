@@ -1,27 +1,80 @@
-# Ngflix
+![Preview](https://github.com/wolmeister/ngflix/blob/master/docs/home.png)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.21.
+<h3 align="center">
+<b>A Netflix clone made with Angular</b>
+<h3>
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Login
 
-## Code scaffolding
+- Video Browse
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Continue Watching
 
-## Build
+- Video Player
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## How to run
 
-## Running unit tests
+- Clone this repository and install all dependecies
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+git clone https://github.com/wolmeister/ngflix.git
+cd ngflix
+yarn install
+```
 
-## Running end-to-end tests
+- Execute the start command
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+```bash
+yarn start
+```
 
-## Further help
+The application runs on the port 4200 by default.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Other commands
+
+- `yarn build` - builds the app
+- `yarn lint` - runs linting
+- `yarn test` - runs unit tests
+- `yarn e2e` - runs end-to-end tests
+
+## Docker
+
+Run one of the following commands to start the app through Docker:
+
+Development version:
+
+```bash
+docker-compose up
+```
+
+Production version:
+
+```bash
+docker-compose -f docker-compose-prod.yml up
+```
+
+The development version runs on por 4200, and the production on port 80.
+
+## Accounts
+
+- Victor Wolmeister
+
+  - Email: victor@gmail.com
+  - Password: test
+
+- Matheus Michels
+
+  - Email: mm@gmail.com
+  - Password: 1234
+
+- Geraldo
+  - Email: geraldo@gmail.com
+  - Password: rivia
+
+## Screenshots
+
+![Login](https://github.com/wolmeister/ngflix/blob/master/docs/login.png)
+![Hover](https://github.com/wolmeister/ngflix/blob/master/docs/hover.png)
+![Player](https://github.com/wolmeister/ngflix/blob/master/docs/player.png)
