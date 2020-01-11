@@ -5,7 +5,7 @@ import { Store } from '@ngrx/store';
 import { BillboardService } from '../../services/billboard.service';
 import { MediaService } from '../../services/media.service';
 import { BillboardMedia } from '../../models/billboard-media';
-import { Media } from '../../models/Media';
+import { Media } from '../../models/media';
 import { AppState } from '../../store/app.states';
 
 @Component({

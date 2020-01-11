@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 
 import { User } from '../models/user';
 import { MediaProgress } from '../models/media-progress';
-import { Media } from '../models/Media';
+import { Media } from '../models/media';
 
 @Injectable({
   providedIn: 'root',

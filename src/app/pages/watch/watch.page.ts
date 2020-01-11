@@ -5,7 +5,7 @@ import Plyr from 'plyr';
 
 import { AppState } from '../../store/app.states';
 import { User } from '../../models/user';
-import { Media } from '../../models/Media';
+import { Media } from '../../models/media';
 import { MediaService } from '../../services/media.service';
 import { MediaProgressService } from '../../services/media-progress.service';
 

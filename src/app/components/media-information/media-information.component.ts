@@ -1,6 +1,6 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 
-import { Media } from '../../models/Media';
+import { Media } from '../../models/media';
 
 @Component({
   selector: 'app-media-information',

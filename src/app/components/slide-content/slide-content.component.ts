@@ -1,5 +1,6 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { Media } from 'src/app/models/Media';
+
+import { Media } from 'src/app/models/media';
 
 @Component({
   selector: 'app-slide-content',

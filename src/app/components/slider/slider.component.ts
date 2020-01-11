@@ -6,7 +6,7 @@ import {
   EventEmitter,
 } from '@angular/core';
 
-import { Media } from '../../models/Media';
+import { Media } from '../../models/media';
 
 @Component({
   selector: 'app-slider',

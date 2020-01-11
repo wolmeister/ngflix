@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Media } from '../models/Media';
+
+import { Media } from '../models/media';
 import medias from './__data__/medias';
 import { User } from '../models/user';
 import { MediaProgressService } from './media-progress.service';
