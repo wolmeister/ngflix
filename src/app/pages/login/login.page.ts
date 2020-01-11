@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { Observable } from 'rxjs';
 
-import { AppState, AuthState } from '../../store/app.states';
+import { AppState } from '../../store/app.states';
 import { SignIn } from '../../store/actions/auth.actions';
 
 @Component({
@@ -10,21 +9,18 @@ import { SignIn } from '../../store/actions/auth.actions';
   templateUrl: './login.page.html',
   styleUrls: ['./login.page.scss'],
 })
-export class LoginPageComponent implements OnInit {
+export class LoginPageComponent {
   email = '';
   password = '';
 
-  state: Observable<AuthState>;
   error = '';
 
   constructor(private store: Store<AppState>) {
-    this.state = this.store.select(state => state.auth);
-  }
-
-  ngOnInit() {
-    this.state.subscribe((state: AuthState) => {
-      this.error = state.error;
-    });
+    store
+      .select(state => state.auth.error)
+      .subscribe(error => {
+        this.error = error;
+      });
   }
 
   onSubmit() {
