@@ -8,9 +8,9 @@ import { BillboardMedia } from 'src/app/models/billboard-media';
 })
 export class BillboardComponent {
   @Input() billboard: BillboardMedia;
-  @Output() onPlay = new EventEmitter<BillboardMedia>();
+  @Output() playItem = new EventEmitter<BillboardMedia>();
 
   handlePlay() {
-    this.onPlay.emit(this.billboard);
+    this.playItem.emit(this.billboard);
   }
 }

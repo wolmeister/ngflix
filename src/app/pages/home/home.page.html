@@ -2,7 +2,7 @@
   <app-header [transparent]="transparent"></app-header>
   <app-billboard
     [billboard]="billboard"
-    (onPlay)="handlePlay($event.mediaId)"
+    (playItem)="handlePlay($event.mediaId)"
   ></app-billboard>
   <div class="slides">
     <app-browser-slider
